@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  {% load static %}
+
+<head>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<style>
+body {
+  background-image: url("../images/portfolio_2.jpg");
+  }
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 3px solid #777;
+}
+.button {
+  background-color:green;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+div.gallery img {
+  width: 50%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+ {% for i in r %}
+<h2><box-icon name='camera' type='solid' animation='spin' rotate='180' color='black' ></box-icon>KLICS<sub>MAN</sub></h2>                           <a href="../job_details/{{i.username}}" class="button">Back</a>
+<!--<div class="collapse navbar-collapse" id="navbarResponsive">-->
+<!--            <ul class="navbar-nav ml-auto">-->
+<!--              <li class="filled-button">-->
+<!--                <a class="nav-link" href="../photographer"><span style="color:black;">Back-->
+<!--                </span>-->
+<!--                </a>-->
+ {% endfor %}
+
+<center>
+<h1>GALLERY</h1>
+<div class="gallery">
+  {% for i in r %}
+<!--  <a target="_blank" href="{{i.work1.url}}">-->
+    <strong>
+                     <img src="{{i.work1.url}}" height="200">
+                    <img src="{{i.work2.url}}" height="200">
+                    <img src="{{i.work3.url}}" height="200">
+<!--                    <img src="{{i.work4.url}}" height="200">-->
+<!--                    <img src="{{i.work5.url}}" height="200">-->
+<!--                    <img src="{{i.work6.url}}" height="200">-->
+    </strong>
+
+  </a>
+  {% endfor %}
+
+<!--  <div class="desc">Add a description of the image here</div>-->
+</div>
+
+<!--<div class="gallery">-->
+<!--  <a target="_blank" href="img_forest.jpg">-->
+<!--    <img src="img_forest.jpg" alt="Forest" width="600" height="400">-->
+<!--  </a>-->
+<!--  <div class="desc">Add a description of the image here</div>-->
+<!--</div>-->
+
+<!--<div class="gallery">-->
+<!--  <a target="_blank" href="img_lights.jpg">-->
+<!--    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">-->
+<!--  </a>-->
+<!--  <div class="desc">Add a description of the image here</div>-->
+<!--</div>-->
+
+<!--<div class="gallery">-->
+<!--  <a target="_blank" href="img_mountains.jpg">-->
+<!--    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">-->
+<!--  </a>-->
+<!--  <div class="desc">Add a description of the image here</div>-->
+<!--</div>-->
+</center>
+</body>
+</html>
+
+

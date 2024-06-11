@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+<title>Fare Payment Widget Responsive Widget Template :: W3layouts</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Fare Payment Widget Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+
+<!-- css files -->
+<link href="{% static 'payment/css/style1pay.css' %}" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="{% static 'payment/css/creditly.css' %}" type="text/css" media="all" /> <!-- credit-card-CSS -->
+<!-- //css files -->
+
+<!-- online-fonts -->
+<link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+<!--//online-fonts -->
+
+</head>
+<body>
+<br>
+<a href="your_booking" class="">&laquo; Back</a>
+
+ <br><br><br>
+{% for i in r %}
+<div class="w3-main">
+		<div  style="margin: 0 auto;height:600px;width:600px">
+			<div class="book-form">
+
+				<h2 class="tittle">Payment Form</h2>
+			    <form action="pay/{{r1}}" method="post" class="creditly-card-form agileinfo_form">
+					{% csrf_token %}
+                    <label>Name</label>
+					<input placeholder="Name" disabled value="{{i.name}}" name="a1" class="name" type="text" required="">
+					<label>Photograpgher</label>
+                    <input placeholder="Name" disabled value="{{i.employee_name}}" name="a2" class="name" type="text" required="">
+					<label>Email</label>
+                    <input placeholder="Name" disabled value="{{i.email}}" name="a3" class="name" type="text" required="">
+					<label>Address</label>
+                    <input placeholder="Name" disabled value="{{i.address}}" name="a4" class="name" type="text" required="">
+					<label>Amount</label>
+                    <input placeholder="amount" disabled value="{{r1}}" name="a5" class="name" type="text" required="">
+					<label>No Of Days</label>
+                    <input placeholder="amount" disabled value="{{i.day}}" name="a5" class="name" type="text" required="">
+<!--					<label>Service Charge</label>-->
+<!--                    <input placeholder="amount" disabled value="{{100}}" name="a6" class="name" type="text" required="">-->
+
+
+					<div class="make wow shake">
+						  <input type="submit" name="submit" value="Pay Now">
+					</div>
+				</form>
+			</div>
+
+		</div>
+
+		<div class="clear"> </div>
+	</div>
+{% endfor %}
+<!-- //Main -->
+
+<!-- footer -->
+<div class="footer-w3l">
+<!--	<p>&copy; 2017 Fare Payment Widget. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>-->
+</div>
+<!-- //footer -->
+
+	<!-- js-scripts-->
+		<script type="text/javascript" src="{% static 'payment/js/jquery-2.1.4.min.js' %}"></script>
+
+	<!-- credit-card -->
+		<script type="text/javascript" src="{% static 'payment/js/creditly.js' %}"></script>
+		<script type="text/javascript">
+			$(function() {
+			  var creditly = Creditly.initialize(
+				  '.creditly-wrapper .expiration-month-and-year',
+				  '.creditly-wrapper .credit-card-number',
+				  '.creditly-wrapper .security-code',
+				  '.creditly-wrapper .card-type');
+
+			  $(".creditly-card-form .submit").click(function(e) {
+				e.preventDefault();
+				var output = creditly.validate();
+				if (output) {
+				  // Your validated credit card output
+				  console.log(output);
+				}
+			  });
+			});
+		</script>
+	<!-- //credit-card -->
+
+	<!-- //js-scripts-->
+</body>
+</html>

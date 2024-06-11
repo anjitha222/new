@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+             background: url(../logimages/login1.jpg) no-repeat 0px 0px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .profile-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+        }
+        .profile-item {
+            margin-bottom: 10px;
+        }
+        .profile-item label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>User Profile</h1>
+        <div class="profile-item">
+            <label>Bio:</label>
+            <p>{{ profile.bio }}</p>
+        </div>
+        <div class="profile-item">
+            <label>Location:</label>
+            <p>{{ profile.location }}</p>
+        </div>
+        <div class="profile-item">
+            <label>Birth Date:</label>
+            <p>{{ profile.birth_date }}</p>
+        </div>
+        <!-- Add other profile fields as needed -->
+    </div>
+</body>
+</html>

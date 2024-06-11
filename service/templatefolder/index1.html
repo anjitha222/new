@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+  <head>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>user index</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+<!--    <div class="sub-header">-->
+<!--      <div class="container">-->
+<!--        <div class="row">-->
+<!--          <div class="col-md-8 col-xs-12">-->
+<!--            <ul class="left-info">-->
+<!--              <li><a href="#"><i class="fa fa-envelope"></i>contact@company.com</a></li>-->
+<!--              <li><a href="#"><i class="fa fa-phone"></i>123-456-7890</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--          <div class="col-md-4">-->
+<!--            <a href="logout" class="filled-button">LOGOUT</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index"><h2><box-icon name='camera' type='solid' animation='spin' rotate='180' color='#f7f3f3' ></box-icon>KLICS<em>MAN</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index1">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+
+               <li class="nav-item">
+                <a class="nav-link" href="photographer">Photographer</a>
+              </li>
+<!--              <li class="nav-item">-->
+<!--                <a class="nav-link" href="feed">Review</a>-->
+<!--              </li>-->
+<!--              <li class="nav-item dropdown">-->
+<!--                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">photographer</a>-->
+
+<!--                <div class="dropdown-menu">-->
+
+<!--                    <a class="dropdown-item" href="interior">Interior Workers</a>-->
+<!--                        <a class="dropdown-item" href="artist">Artist</a>-->
+<!--                        <a class="dropdown-item" href="photographer">Photographer</a>-->
+<!--                </div>-->
+                <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXNJREFUSEu1VUuOwjAMfRFssgniBFNuAjcZTgI9yfQmw02mcwJEWGRDyMhVg/JxmiJNverH8bOfnx2BhU0sHB+zAIzW3wD2STKdVOpYS3AugOMCSaWq51kHc702crvtKSg9Y7X6YTO1duf9vG/4Tt8ygICODs79QohThYYOQDNSmNEWARitPwF81Xit/D9KpQh0sBSA5fpNwB7WHjxVLwBzu50n6KB+tLD2MoCt1w2co0qJmtyca+Vmc44qKEiRfHqp1I6LY7Sm5nMgr16kFFFWpPfwUMRpCFSoOmo0p6IoqymtMxLOqq0CINF6VEE+I9MARmuiiKQaWpkiTtbOtXg+u1xFfPChyaHsPPLkhAN5k6syFeKIx6OnzMaBpAmfL9Nhl5Rl986sRX2IZTo9bPNAgiErLTsvU79P0rmIgaipQnyM4rhIpQ6hQ31d3+97OEcXTm6BhMMVXwVIIxmt//fCYQC4nZPRwRVZvfLmdbbstTjAH0FjwRlbQlGXAAAAAElFTkSuQmCC"/>  Settings</a>
+
+                <div class="dropdown-menu">
+
+                  <a class="dropdown-item" href="profile5"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUNJREFUSEu1lYFtwzAMBN+bpJMk2aSdJM0kaSZJO0nbSdJcIBk0TdFygxAwZMAyn/p/UoOeHMOT86sHYCeJZ1vWn9v6Kem3rLw3IwPYSDqVpFkOAPeSWGfRAngtyXsZJPn5tvnd/xABrE1ucx49iAeAlu/esoN9M7o8wCXhvFZHEZzy0CgE0dHkHhYgo+ZN0odLmO0H4O4uC4BArapeApdkdI5aWAAsSVVRRADsuy7RZAEQl6qimLmjFENRUSA2RU0oygCsz5dEnuhrT5A5aK1zMQTG6BaZE9SngrX04nsoMgONU/iILMoeqOKfSIfxn6VGG/2ccOTt2my0WpUdFemkLKfwE3di6Z5hV+f/V+1OQ49vzNmJW+M66+oWW1GvpDda74UD54i66sKxVeIUwOqVyTeSVcr+fWWuba5wf8+l/xDQH/+ESxlufBg7AAAAAElFTkSuQmCC"/>  <b>  View profile</b></a>
+                        <a class="dropdown-item" href="user_inbox"><b><box-icon name='bell-ring' type='solid' animation='tada' ></box-icon> Inbox</b></a>
+
+                        <a class="dropdown-item" href="reviewlist"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOxJREFUSEu1VcERwjAMUzeBTWAS6CTAJLAJbAKbFMQlXM51iO20fvWuZymyYmXAyjWsjA9JsANwBbAJEr8AjAAeuV8S3D8/SdJTJNnWCKYe5KL3d3CpwEPAURwqirsJbmnW9IqeybF2EfDkBL0kM+mbrDDBPoHy5M8/foUIMjhxORLt5LPLYzXZA04SlwIvuIuARp6T7tZYSkvMCjKBB9ylILrYZgWLEywRdkxSXoxvaXF96kjUZlxrI+HWUpl8I2ZgWrP1RdOiodyPqldWAgIcU8jx2wSuedC6NVw6joZxbSqPAhNgNbdD3YamN0uOMRnB4mUMAAAAAElFTkSuQmCC"/></i> <b>Your Review</b></a>
+
+<!--                        <a class="dropdown-item" href="emp_reg"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKJJREFUSEvdVNsNgCAMPEZxE1dxEnUUJ3EVN1Fr0qQSSKFaNfJJ6L0aLsD5BGd8/ItgBtAaI1sANKlZGdFqBOexZNyvEaTUsMOcKL4/vdMey9QeI8it6jYH7gRarN/YgeVLVO3AnaC0BOXvr3LgTmCJqANApUelSecQKZVeadNY0LhfDDEBVXV/obIJjxxMDB4TWGJRZ0qXqQJp/WEG0AbdHWx7QSwZtis/7QAAAABJRU5ErkJggg=="/>  <b> Sign-up as employee</b></a>-->
+                    <a class="dropdown-item" href="your_booking"><box-icon name='history'></box-icon> <b>Your Booking</b></a>
+                    <a class="dropdown-item" href="forget_pwd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANNJREFUSEvtld0NwiAUhU830U10EnUSdRLdRDfRTdQvgcTG2x7ANH0pLy0Bznd/odPEo5tYX6WAjaSdJL6Mp6TzZ353BpYA9pIuA0JATmMQB8DiWxJA7Jr+geLRStI6eRRyHABxIJGlWH5M0MOQFw7wSgejfVj/SNbjRZMHYwAE3bqtIifg1ucBkFSSl2velXpepyd+eiNKHokjgS0DyPb7YATIcW0BcKanuQCiMC4hssU1f4j+aTReut7NGvUBVwQvWG03F18VNsg1G9yDU6MV7n0DDfwoGYxA/o8AAAAASUVORK5CYII="/>   <b> Change Password</b></a>
+<!--                  <a class="dropdown-item" href="portfolio"><b><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEtjZKAxYKSx+QzEWODAwMCwH4dDGoHiDfgcScgCfIaDzH3AwMCQyMDAcACXJegW/KdSkMHNpbsFVPIAwhhccUBuUGGYNzIsgPkSPdiwiZMVRKMWYE36yOE9GkQjIIhIKQCJzmigGgxU2ZACQJWOI7oGXIUdyPB6EizBWbMRqjJJ8QFWtTS3AAAyqysZPeY+2wAAAABJRU5ErkJggg=="/>Delete the account</b></a>-->
+                        <a class="dropdown-item" href="logout"><b><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARNJREFUSEvNlY0NgjAQhY9NdBJ1E51EnUSdRJ1EN1E+wiMnKS1FmtCkgaS9e/fe/bSywqsq7N8WA7Ays72ZbcxsW/+/3X6a2XVIiRQDOT4mpDzX56fQnRgAzl/OCCePdnPGho3AYXVozzuzFAOiQhYMcRBaAF2cdGt/KQWQU2T3FoR8EFCzYgBE1V0cgeQl3UmqEICnnMsQSclJl/S+A5IG1TEMQ6RkTzHA4kci6hxZcpcPUjJREE2y/aHo/QOA7cfnty8RESAR31QRhAKRCl0lDSVZILMnWVFpRATbP9Jw6vxomebmQPezGw1DjQAimn1U+ITj/FZi2I0d1z/zZ8qwo0PZ/QdHj82QfMt5MqdWVnkGXwHfPhlPTtPIAAAAAElFTkSuQmCC"/> Logout</b></a>
+                </div>
+            </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+
+          <!-- // Item -->
+          <!-- Item -->
+
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-3">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h4>SOME MOMENTS COMES ONES IN YOUR LIFETIME </h4>
+                  <h6>CAPTURE YOUR MOST HAPPIEST MOMENT WITH US...</h6>
+<!--                    <p>find your wedding photographer!</p>-->
+
+
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+
+
+
+
+
+
+
+<!--    <div class="testimonials">-->
+<!--      <div class="container">-->
+<!--        <div class="row">-->
+<!--          <div class="col-md-12">-->
+<!--            <div class="section-heading">-->
+<!--&lt;!&ndash;              <h2>What they say <em>about us</em></h2>&ndash;&gt;-->
+<!--&lt;!&ndash;              <span>testimonials from our greatest clients</span>&ndash;&gt;-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-md-12">-->
+<!--            <div class="owl-testimonials owl-carousel">-->
+
+<!--              <div class="testimonial-item">-->
+<!--                <div class="inner-content">-->
+<!--                  <h4>George Walker</h4>-->
+<!--                  <span>Chief Financial Analyst</span>-->
+<!--                  <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>-->
+<!--                </div>-->
+<!--                <img src="{% static 'http://placehold.it/60x60' %}" alt="">-->
+<!--              </div>-->
+
+<!--              <div class="testimonial-item">-->
+<!--                <div class="inner-content">-->
+<!--                  <h4>John Smith</h4>-->
+<!--                  <span>Market Specialist</span>-->
+<!--                  <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi."</p>-->
+<!--                </div>-->
+<!--                <img src="{% static 'http://placehold.it/60x60' %}" alt="">-->
+<!--              </div>-->
+
+<!--              <div class="testimonial-item">-->
+<!--                <div class="inner-content">-->
+<!--                  <h4>David Wood</h4>-->
+<!--                  <span>Chief Accountant</span>-->
+<!--                  <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>-->
+<!--                </div>-->
+<!--                <img src="{% static 'http://placehold.it/60x60' %}" alt="">-->
+<!--              </div>-->
+
+<!--              <div class="testimonial-item">-->
+<!--                <div class="inner-content">-->
+<!--                  <h4>Andrew Boom</h4>-->
+<!--                  <span>Marketing Head</span>-->
+<!--                  <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>-->
+<!--                </div>-->
+                <img src="{% static 'http://placehold.it/60x60' %}" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer Starts Here -->
+
+
+<!--    <div class="sub-footer">-->
+<!--      <div class="container">-->
+<!--        <div class="row">-->
+<!--          <div class="col-md-12">-->
+<!--&lt;!&ndash;            <p>&ndash;&gt;-->
+<!--                Copyright © 2020 Company Name-->
+<!--                - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a>-->
+<!--&lt;!&ndash;            </p>&ndash;&gt;-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Additional Scripts -->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script src="{% static 'assets/js/owl.js' %}"></script>
+    <script src="{% static 'assets/js/slick.js' %}"></script>
+    <script src="{% static 'assets/js/accordions.js' %}"></script>
+
+    <script language = "text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+
+          }
+      }
+    </script>
+    </div>
+  </body>
+</html>

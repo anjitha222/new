@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+   <head>
+    {% if message1 %}
+      <script>
+          alert('{{ message1 }}');
+      </script>
+{% endif %}
+      {% if message2 %}
+         <script>
+             alert('{{ message2 }}');
+         </script>
+{% endif %}
+<title>Connective Login Form a Responsive Widget Template :: w3layouts</title>
+<!-- meta_tags-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="connective login form a Flat Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta_tag_Keywords -->
+<link href="{% static 'nwlogin_css/style.css' %}" rel="stylesheet" type="text/css" media="all"><!--style_sheet-->
+<link href="{% static 'nwlogin_css/font-awesome.min.css'%}" rel="stylesheet" type="text/css" media="all"><!--font_awesome_icons-->
+<!--web_fonts-->
+<link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
+<!--//web_fonts-->
+</head>
+<body>
+<div class="form">
+	<div class="form-content">
+		<form action="login" method="post">
+			{% csrf_token %}
+			<div class="form-info">
+				<h2>Sign-in</h2>
+			</div>
+			<div class="email-w3l">
+				<span class="i1"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+				<input class="email" type="text" name="n1" placeholder="username" required="">
+			</div>
+			<div class="pass-w3l">
+			<!---728x90--->
+			<span class="i2"><i class="fa fa-unlock" aria-hidden="true"></i></span>
+				<input class="pass" type="password" name="n2" placeholder="Password" required="">
+			</div>
+			<div class="form-check">
+				<div class="right">
+					<a href="forgot">Forgot Password?</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="form-check">
+				<div class="left">
+					<a href="user_reg"><span style="color:white;">sign as a user?</span></a>
+			</div>
+			<div class="form-check">
+				<div class="left">
+					<a href="EM"><span style="color:white;">sign as a photographer?</span></a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="submit-agileits">
+				<input class="login" type="submit" value="login">
+			</div>
+		</form>
+	</div>
+</div>
+<!---728x90--->
+<!--<footer>&copy; 2018 Connective login form. All rights reserved | Design by <a href="#">W3layouts</a></footer>-->
+<!---728x90--->
+</body>
+</html>
+
+
+
+<!--      <title> Sign up & login Form  </title>-->
+<!--      &lt;!&ndash; Meta tags &ndash;&gt;-->
+<!--      <meta name="viewport" content="width=device-width, initial-scale=1" />-->
+<!--      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+<!--      <meta name="keywords" content="Gaze Sign up & login Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design"-->
+<!--         />-->
+<!--      <script>-->
+<!--         addEventListener("load", function () { setTimeout(hideURLbar, 0); }, false); function hideURLbar() { window.scrollTo(0, 1); }-->
+<!--      </script>-->
+<!--      &lt;!&ndash; Meta tags &ndash;&gt;-->
+<!--      &lt;!&ndash;stylesheets&ndash;&gt;-->
+<!--      <link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' media="all">-->
+<!--      &lt;!&ndash;//style sheet end here&ndash;&gt;-->
+<!--      <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">-->
+<!--      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>-->
+<!--   </head>-->
+<!--   <body>-->
+<!--      <div class="mid-class">-->
+<!--         <div class="art-right-w3ls">-->
+<!--             <center>-->
+<!--            <h2><b>Log In Here</b></h2>-->
+<!--            <form action="login" method="post">-->
+<!--               {% csrf_token %}-->
+<!--               <div class="main">-->
+<!--                  <div class="form-left-to-w3l">-->
+<!--                     <input type="text" name="n1" placeholder="Username" required="">-->
+<!--                  </div>-->
+<!--                  <div class="form-left-to-w3l ">-->
+<!--                     <input type="password" name="n2" placeholder="Password" required="">-->
+<!--                     <div class="clear"></div>-->
+<!--                  </div>-->
+<!--               </div>-->
+
+<!--               <div class="right-side-forget">-->
+<!--                  <a href="forget_pwd" class="for">Forgot password...?</a>-->
+<!--               </div>-->
+<!--               <div class="clear"></div>-->
+<!--               <div class="btnn">-->
+<!--                  <button type="submit">Log In</button>-->
+<!--               </div>-->
+<!--            </form>-->
+<!--            <div class="w3layouts_more-buttn">-->
+<!--               <h3>Don't Have an account..?<br>-->
+<!--                  <a href="EM">sign up as Photographer...-->
+<!--                  </a><br>-->
+<!--                 <a href="user_reg">sign up as user...-->
+<!--                  </a>-->
+<!--               </h3>-->
+<!--            </div>-->
+<!--            </center>-->
+<!--            &lt;!&ndash; popup&ndash;&gt;-->
+<!--&lt;!&ndash;            <div id="content1" class="popup-effect">&ndash;&gt;-->
+<!--&lt;!&ndash;               <div class="popup">&ndash;&gt;-->
+<!--&lt;!&ndash;                  &lt;!&ndash;login form&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                  <div class="letter-w3ls">&ndash;&gt;-->
+<!--&lt;!&ndash;                     <form action="#" method="post">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-left-to-w3l">&ndash;&gt;-->
+<!--&lt;!&ndash;                           <input type="text" name="name" placeholder="Username" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-left-to-w3l">&ndash;&gt;-->
+<!--&lt;!&ndash;                           <input type="text" name="name" placeholder="Phone" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-left-to-w3l">&ndash;&gt;-->
+<!--&lt;!&ndash;                           <input type="email" name="email" placeholder="Email" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-left-to-w3l">&ndash;&gt;-->
+<!--&lt;!&ndash;                           <input type="password" name="password" placeholder="Password" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-left-to-w3l margin-zero">&ndash;&gt;-->
+<!--&lt;!&ndash;                           <input type="password" name="password" placeholder="Confirm Password" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="btnn">&ndash;&gt;-->
+<!--&lt;!&ndash;                           <button type="submit">Sign Up</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                           <br>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                     </form>&ndash;&gt;-->
+<!--&lt;!&ndash;                     <div class="clear"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                  &lt;!&ndash;//login form&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                  <a class="close" href="#">&times;</a>&ndash;&gt;-->
+<!--&lt;!&ndash;               </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--            &lt;!&ndash; //popup &ndash;&gt;-->
+
+<!--      <footer class="bottem-wthree-footer">-->
+
+<!--      </footer>-->
+<!--</body>-->
+
+<!--&lt;!&ndash;</html>&ndash;&gt;-->
+
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <title>Service login form Responsive Widget Template : W3Layouts</title>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css-login/style.css' %}" type="text/css" media="all" />
+
+</head>
+
+<body>
+<!--    <div class="signinform">-->
+<!--        <h1> Login Form</h1>-->
+<!--        &lt;!&ndash; container &ndash;&gt;-->
+<!--        <div class="container">-->
+<!--            &lt;!&ndash; main content &ndash;&gt;-->
+<!--            <div class="w3l-form-info">-->
+<!--                <div class="w3_info">-->
+<!--                    <h2>Login</h2>-->
+<!--                    <form action="login" method="post">-->
+<!--                        {% csrf_token %}-->
+<!--                        <div class="input-group">-->
+<!--                            <span><i class="fas fa-user" aria-hidden="true"></i></span>-->
+<!--                            <input type="text" name="n1" placeholder="username" required="">-->
+<!--                        </div>-->
+<!--                        <div class="input-group">-->
+<!--                            <span><i class="fas fa-key" aria-hidden="true"></i></span>-->
+<!--                            <input type="Password" id="pwd"  name="n2" placeholder="Password" required="">-->
+<!--                        </div>-->
+<!--                        <div class="form-row bottom">-->
+<!--&lt;!&ndash;                            <div class="form-check">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <input type="checkbox" id="remenber" name="remenber" value="remenber">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <label for="remenber"> Remember me?</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--                            <a href="forgot" class="forgot">Forgot password?</a>-->
+<!--                        </div>-->
+<!--                        <button class="btn btn-primary btn-block" type="submit">Login</button>-->
+<!--                        <div class="form-check">-->
+<!--				<div class="left">-->
+<!--					<a href="user_reg"><span style="color:white;">sign as a user?</span></a>-->
+<!--			</div>-->
+<!--			<div class="form-check">-->
+<!--				<div class="left">-->
+<!--					<a href="EM"><span style="color:white;">sign as a photographer?</span></a>-->
+<!--				</div>-->
+<!--				<div class="clear"></div>-->
+<!--			</div>-->
+<!--			<div class="submit-agileits">-->
+<!--				<input class="login" type="submit" value="login">-->
+<!--                    </form>-->
+<!--                    <p class="continue"><span>or Login with</span></p>-->
+<!--                    <div class="social-login">-->
+<!--                        <a href="#facebook">-->
+<!--                            <div class="facebook">-->
+<!--                                <span class="fab fa-facebook-f" aria-hidden="true"></span>-->
+
+<!--                            </div>-->
+<!--                        </a>-->
+<!--                        <a href="#twitter">-->
+<!--                            <div class="twitter">-->
+<!--                                <span class="fab fa-twitter" aria-hidden="true"></span>-->
+<!--                            </div>-->
+<!--                        </a>-->
+<!--                        <a href="#google">-->
+<!--                            <div class="google">-->
+<!--                                <span class="fab fa-google" aria-hidden="true"></span>-->
+<!--                            </div>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <p class="account">Don't have an account? <a href="#signup">Sign up</a></p>-->
+<!--                </div>-->
+<!--            </div>-->
+            <!-- //main content -->
+        </div>
+        <!-- //container -->
+        <!-- footer -->
+<!--        <div class="footer">-->
+<!--            <p>&copy; 2020 Service login form. All Rights Reserved | Design by <a href="https://w3layouts.com/"-->
+<!--                    target="blank">W3layouts</a></p>-->
+        </div>
+        <!-- footer -->
+    </div>
+
+    <!-- fontawesome v5-->
+    <script src="{% static 'js-login/fontawesome.js' %}"></script>
+
+</body>
+
+</html>

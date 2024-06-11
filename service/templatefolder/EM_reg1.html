@@ -1,0 +1,321 @@
+<!--<!DOCTYPE html>-->
+
+
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+	<style>
+      /* Apply uppercase transformation to the input field */
+    #capitalInput {
+        text-transform: lowercase;
+    }
+</style>
+<title>Softball Registration Form Flat Responsive widget Template :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Softball Registration Form Widget Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- font files -->
+<link href="//fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+<!-- /font files -->
+<!-- css files -->
+<link href="{% static 'logcss/style.css' %}" rel='stylesheet' type='text/css' media="all" />
+<!-- /css files -->
+<link href="{% static 'logcss/wickedpicker.css' %}" rel="stylesheet" type='text/css' media="all" />
+<script type="text/javascript" src="{% static 'logjs/jquery-2.1.4.min.js' %}"></script>
+</head>
+<body>
+	<div class="w3-banner-main">
+		<div class="center-container">
+			<br>
+			<a href="index" class=""><span style="color:black;">&laquo; Back</span></a>
+
+		 <br><br><br>
+			<h1 class="header-w3ls">Photographer Registration</h1>
+			<div class="content-top">
+				<div class="content-w3ls">
+					<div class="form-w3ls">
+						<form action="EM" method="post">
+							{% csrf_token %}
+							<div class="content-wthree1">
+								<div class="grid-agileits1">
+									<div class="form-control">
+										<label class="header">Name </label>
+										<input type="text"  name="NAME" placeholder="name here.." title="Please enter your Full Name" required="">
+									</div><br>
+
+									<div class="form-control">
+										<label class="header">Email </label>
+										<input type="email"  name="EMAIL" placeholder="email here.." title="Please enter a Valid Email Address" required="">
+									</div><br>
+
+									<div class="form-control">
+										<label class="header">Phone Number </label>
+										<input type="text" name="PHONE"  pattern="[6-9]{1}[0-9]{9}" placeholder="phone number.." title="Please enter valid phone number" required="">
+									</div><br>
+									<div class="grid-w3layouts1">
+<!--									<div class="w3-agile1">-->
+<!--										<label class="rating">Choose gender </label>-->
+<!--										<ul>-->
+<!--&lt;!&ndash;											<li>&ndash;&gt;-->
+<!--&lt;!&ndash;												<input type="radio" id="a-option" name="male">&ndash;&gt;-->
+<!--&lt;!&ndash;												<label for="a-option">Male </label>&ndash;&gt;-->
+<!--&lt;!&ndash;												<div class="check"></div>&ndash;&gt;-->
+<!--											</li>-->
+<!--											<li>-->
+<!--												<input type="radio" id="b-option" name="female">-->
+<!--												<label for="b-option">Female</label>-->
+<!--												<div class="check"><div class="inside"></div></div>-->
+<!--											</li>-->
+<!--											<li>-->
+<!--												<input type="radio" id="c-option" name="others">-->
+<!--												<label for="b-option">others</label>-->
+<!--												<div class="check"><div class="inside"></div></div>-->
+<!--											</li>-->
+
+										</ul>
+									</div>
+								</div>
+<!--								<div class="form-control">-->
+<!--							<label class="header">Date of joining </label>	-->
+<!--							<input  id="datepicker1" name="Text" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">-->
+<!--						</div>-->
+									<div class="form-control">
+										<label class="header">Location </label>
+										<input type="text"  name="LOCATION" placeholder="location here.."  id="capitalInput" required="">
+									</div><br>
+<!--						<div class="gaps">-->
+<!--							<label class="header">Time </label>	-->
+<!--							<input type="text" id="timepicker" name="Time" class="timepicker form-control" value="">	-->
+<!--						</div>	-->
+									<div class="form-control">
+										<label class="header">License </label>
+										<input type="file"  name="LICENSE" required="">
+									</div><br>
+
+<!--								<div class="form-control">-->
+<!--							<label class="header">specialised skill</label>-->
+<!--							<input type="text" name="SKILL" placeholder="skill here.." required="">-->
+<!--						</div><br>-->
+<!--								<div class="form-control">-->
+<!--										<label class="header">Advance Amount/day </label>-->
+<!--										<input type="text"  name="AMOUNT" placeholder="please give your advance amount here.." min="100" max="3000" title="Please enter advance amount between 100 to 3000" required="">-->
+<!--									</div><br>-->
+<!--								<div class="form-control">-->
+<!--										<label class="header">Work1 </label>-->
+<!--										<input type="file" class="input" name="WORK1"  required="">-->
+<!--									</div>-->
+<!--									<div class="form-w3ls-1">-->
+<!--						<div class="form-control">-->
+<!--							<label class="header">Work 2</label>-->
+<!--							<input type="file" name="WORK2" required="">-->
+<!--						</div><br>-->
+								</div>
+							</div>
+					</div>
+
+<!--						<div class="form-control"> -->
+<!--							<label class="header">Address </label>-->
+<!--							<input type="text" id="name" name="name" placeholder="" title="Please enter your Full Name" required="">-->
+<!--						</div>	-->
+						<div class="form-w3ls-1">
+						<div class="form">
+							<label class="header">Gender </label>
+							<select class="form" name="GENDER">
+										<option></option>
+										<option>MALE</option>
+										<option>FEMALE</option>
+										<option>OTHERS</option>
+									</select>
+						</div><br>
+						<div class="form-w3ls-1">
+						<div class="form-control">
+							<div class="form--control">
+									<label class="header">Profile Photo </label>
+<!--									<textarea  name="name" placeholder="" title="" required=""></textarea>-->
+										<input type="file" class="input" name="PHOTO" required="">
+							</div><br>
+<!--							<label class="header">Full amount </label>-->
+<!--							<input type="text" name="amount1" placeholder="full amount.." required="">-->
+						</div><br>
+<!--							<div class="form-control">-->
+<!--							<label class="header">Advance amount </label>-->
+<!--							<input type="text" name="amount2" placeholder="advance amount.." required="">-->
+<!--						</div><br>-->
+
+
+
+						<div class="form-control">
+							<label class="header">Username </label>
+							<input type="text" name="USERNAME" placeholder="username.." required="">
+						</div><br>
+								<div class="form--control">
+									<label class="header">Password </label>
+<!--									<textarea  name="name" placeholder="" title="" required=""></textarea>-->
+										<input type="password"  name="PASSWORD" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="">
+									</div><br><br>
+								</div>
+							</div><br>
+
+									  <input type="submit" value="Register">
+				    </form>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<!-- Calendar -->
+				<link rel="stylesheet" href="{% static 'logcss/jquery-ui.css' %}" />
+				<script src="{% static 'logjs/jquery-ui.js' %}"></script>
+				  <script>
+						  $(function() {
+							$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+						  });
+				  </script>
+			<!-- //Calendar -->
+			<script type="text/javascript" src="{% static 'logjs/wickedpicker.js' %}"></script>
+			<script type="text/javascript">
+				$('.timepicker').wickedpicker({twentyFour: false});
+			</script>
+
+
+</body>
+</html>
+
+
+<!--EMPLOYEE OLD REGISTRATION-->
+<!--{% load static %}-->
+<!--<html lang="en">-->
+<!--   <head>-->
+<!--      <title>Sign up & login Form a Flat Responsive Widget Template :: w3layouts </title>-->
+<!--      &lt;!&ndash; Meta tags &ndash;&gt;-->
+<!--      <meta name="viewport" content="width=device-width, initial-scale=1" />-->
+<!--      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+<!--      <meta name="keywords" content=" Sign up & login Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design"-->
+<!--         />-->
+<!--      <script>-->
+<!--         addEventListener("load", function () { setTimeout(hideURLbar, 0); }, false); function hideURLbar() { window.scrollTo(0, 1); }-->
+<!--      </script>-->
+<!--      &lt;!&ndash; Meta tags &ndash;&gt;-->
+<!--      &lt;!&ndash;stylesheets&ndash;&gt;-->
+<!--      <link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' media="all">-->
+<!--      &lt;!&ndash;//style sheet end here&ndash;&gt;-->
+<!--      <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">-->
+<!--   </head>-->
+<!--   <body>-->
+<!--      <div class="mid-class">-->
+<!--         <div class="art-right-w3ls">-->
+<!--            <h2>Sign-<b>In</b> and Sign-<b>Up</b><br><sub><center><b>Employee</b></center></sub></h2>-->
+<!--             <center>-->
+<!--            <form action="EM" method="post" enctype=multipart/form-data>-->
+<!--               {% csrf_token %}-->
+<!--               <div class="main">-->
+<!--                  <div class="form-left-to-w3l">-->
+<!--                     <input type="text" name="n1" placeholder="Name" required="">-->
+<!--                  </div>-->
+<!--                  <div class="form-left-to-w3l ">-->
+<!--                     <input type="email" name="n2" placeholder="Email" required="">-->
+<!--                     <div class="clear"></div>-->
+<!--                  </div>-->
+<!--                  <div class="form-left-to-w3l ">-->
+<!--                     <input type="text" name="n3" placeholder="gender" required="">-->
+<!--                     <div class="clear"></div>-->
+<!--                  </div>-->
+
+<!--                </div>-->
+<!--                  <div class="form-left-to-w3l">-->
+<!--                     <input type="text" name="n4" placeholder="Phone number" required="">-->
+<!--                  </div>-->
+
+<!--                  <div class="form-left-to-w3l">-->
+<!--                     <input type="text" name="n5" placeholder="Location" required="">-->
+<!--                  </div>-->
+<!--                 <div class="form-left-to-w3l">-->
+<!--                      <div class="mb-3">-->
+<!--                                <label for="formFileMultiple" class="form-label">Aadhar Proof or </label>-->
+<!--                                <input class="form-control bg-dark" name="n11" type="file" id="formFileMultiple" multiple required="">-->
+<!--                            </div>-->
+<!--                  <div class="form-left-to-w3l">-->
+<!--&lt;!&ndash;                        <input type="text" name="n6" placeholder="category" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;                     </div>&ndash;&gt;-->
+<!--                        <div class="col-sm-12 col-xl-6">-->
+<!--                        <div class="bg-secondary rounded h-100 p-4">-->
+<!--&lt;!&ndash;                            <h6 class="mb-4">Job Form</h6>&ndash;&gt;-->
+
+
+<!--                            <select  aria-label="Default select example" name="n7">-->
+<!--                                <option selected>Categories</option>-->
+<!--                                <option value="1">Photographer</option>-->
+<!--                                <option value="2">Artist</option>-->
+<!--                                <option value="3">Interior worker</option>-->
+<!--                            </select>-->
+<!--                  <div class="form-left-to-w3l">-->
+<!--                     <input type="text" name="n7" placeholder="specialised skill" required="">-->
+<!--                  </div>-->
+<!--                  <div class="form-left-to-w3l">-->
+<!--                     <input type="text" name="n8" placeholder="experience" required="">-->
+<!--                  </div>-->
+
+<!--                  <div class="form-left-to-w3l">-->
+<!--                     <input type="text" name="n9" placeholder="Username" required="">-->
+<!--                  </div>-->
+<!--                  <div class="form-left-to-w3l">-->
+<!--                     <input type="password" name="n10" placeholder="Password" required="">-->
+
+<!--                  </div>-->
+
+<!--                    <button type="submit">submit</button>-->
+<!--                  </div>-->
+<!--          </form>-->
+<!--            <div class="w3layouts_more-buttn">-->
+<!--               <h3>Already have an account..?-->
+<!--                  <a href="login">Log In Here-->
+<!--                  </a>-->
+<!--               </h3>-->
+<!--            </div>-->
+<!--                 </center>-->
+<!--            &lt;!&ndash; popup&ndash;&gt;-->
+<!--&lt;!&ndash;            <div id="content1" class="popup-effect">&ndash;&gt;-->
+<!--&lt;!&ndash;               <div class="popup">&ndash;&gt;-->
+<!--&lt;!&ndash;                  &lt;!&ndash;login form&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                  <div class="letter-w3ls">&ndash;&gt;-->
+<!--&lt;!&ndash;                     <form action="login" method="post">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-left-to-w3l">&ndash;&gt;-->
+<!--&lt;!&ndash;                           <input type="text" name="n1" placeholder="Username" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-left-to-w3l">&ndash;&gt;-->
+<!--&lt;!&ndash;                           <input type="password" name="password" placeholder="Password" required="">&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="btnn">&ndash;&gt;-->
+<!--&lt;!&ndash;                           <button type="submit">Sign Up</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                           <br>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                     </form>&ndash;&gt;-->
+<!--&lt;!&ndash;                     <div class="clear"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                  </div>&ndash;&gt;-->
+<!--                  &lt;!&ndash;//login form&ndash;&gt;-->
+<!--                  <a class="close" href="#">&times;</a>-->
+<!--               </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; //popup &ndash;&gt;-->
+<!--         </div>-->
+<!--        >-->
+
+<!--         </div>-->
+<!--      </div>-->
+<!--      <footer class="bottem-wthree-footer">-->
+
+<!--      </footer>-->
+
+<!--   </body>-->
+<!--</html>-->

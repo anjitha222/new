@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</title>
+  <!-- loader-->
+  <link href="{% static 'assetsad/css/pace.min.css' %}" rel="stylesheet"/>
+  <script src="{% static 'assetsad/js/pace.min.js' %}"></script>
+  <!--favicon-->
+  <link rel="icon" href="{% static 'assetsad/images/favicon.ico' %}" type="image/x-icon">
+  <!-- simplebar CSS-->
+  <link href="{% static 'assetsad/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+  <!-- Bootstrap core CSS-->
+  <link href="{% static 'assetsad/css/bootstrap.min.css' %}" rel="stylesheet"/>
+  <!-- animate CSS-->
+  <link href="{% static 'assetsad/css/animate.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Icons CSS-->
+  <link href="{% static 'assetsad/css/icons.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- Sidebar CSS-->
+  <link href="{% static 'assetsad/css/sidebar-menu.css' %}" rel="stylesheet"/>
+  <!-- Custom Style-->
+  <link href="{% static 'assetsad/css/app-style.css' %}" rel="stylesheet"/>
+
+</head>
+
+<body class="bg-theme bg-theme1">
+
+<!-- start loader -->
+   <div id="pageloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner" ><div class="loader"></div></div></div></div>
+   <!-- end loader -->
+
+<!-- Start wrapper-->
+ <div id="wrapper">
+
+  <!--Start sidebar-wrapper-->
+   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+     <div class="brand-logo">
+      <a href="index.html">
+<!--       <img src="{% static 'assets1/images/logo-icon.png' %}" class="logo-icon" alt="logo icon">-->
+       <h5 class="logo-text">KLICS<sub>MAN</sub> Admin</h5>
+     </a>
+   </div>
+      <ul class="sidebar-menu do-nicescrol">
+<li class="sidebar-header">MAIN NAVIGATION</li>
+      <li>
+        <a href="newadm">
+          <i class="zmdi zmdi-grid"></i> <span>Dashboard</span>
+        </a>
+      </li>
+
+<!--      <li>-->
+<!--        <a href="icons.html">-->
+<!--          <i class="zmdi zmdi-invert-colors"></i> <span>UI Icons</span>-->
+<!--        </a>-->
+<!--      </li>-->
+
+<!--      <li>-->
+<!--        <a href="forms.html">-->
+<!--          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Forms</span>-->
+<!--        </a>-->
+<!--      </li>-->
+      <li>
+        <a href="newadmin_table">
+          <i class="zmdi zmdi-grid"></i> <span>Photographer</span>
+        </a>
+      </li>
+       <li>
+        <a href="userlist">
+          <i class="zmdi zmdi-grid"></i> <span>User</span>
+        </a>
+      </li>
+       <li>
+        <a href="feedback_list">
+          <i class="zmdi zmdi-grid"></i> <span>Feedback</span>
+        </a>
+      </li>
+         <li>
+        <a href="newadm_msg">
+          <i class="zmdi zmdi-grid"></i> <span>Messages</span>
+        </a>
+         </li>
+       <li>
+        <a href="empreq">
+          <i class="zmdi zmdi-grid"></i> <span>Request</span>
+        </a>
+<!--      <li>-->
+<!--        <a href="calendar.html">-->
+<!--          <i class="zmdi zmdi-calendar-check"></i> <span>Calendar</span>-->
+<!--          <small class="badge float-right badge-light">New</small>-->
+<!--        </a>-->
+      </li>
+       <li>
+        <a href="newadmn_booking">
+          <i class="zmdi zmdi-grid"></i> <span>Booking</span>
+        </a>
+         </li>
+   </ul>
+   </div>
+   <!--End sidebar-wrapper-->
+
+<!--Start topbar header-->
+<header class="topbar-nav">
+ <nav class="navbar navbar-expand fixed-top">
+  <ul class="navbar-nav mr-auto align-items-center">
+    <li class="nav-item">
+      <a class="nav-link toggle-menu" href="javascript:void();">
+       <i class="icon-menu menu-icon"></i>
+     </a>
+    </li>
+<!--    <li class="nav-item">-->
+<!--      <form class="search-bar">-->
+<!--        <input type="text" class="form-control" placeholder="Enter keywords">-->
+<!--         <a href="javascript:void();"><i class="icon-magnifier"></i></a>-->
+<!--      </form>-->
+<!--    </li>-->
+  </ul>
+
+<!--  <ul class="navbar-nav align-items-center right-nav-link">-->
+<!--    <li class="nav-item dropdown-lg">-->
+<!--      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">-->
+<!--      <i class="fa fa-envelope-open-o"></i></a>-->
+<!--    </li>-->
+<!--    <li class="nav-item dropdown-lg">-->
+<!--      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">-->
+<!--      <i class="fa fa-bell-o"></i></a>-->
+<!--    </li>-->
+<!--    <li class="nav-item language">-->
+<!--      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-flag"></i></a>-->
+<!--      <ul class="dropdown-menu dropdown-menu-right">-->
+<!--          <li class="dropdown-item"> <i class="flag-icon flag-icon-gb mr-2"></i> English</li>-->
+<!--          <li class="dropdown-item"> <i class="flag-icon flag-icon-fr mr-2"></i> French</li>-->
+<!--          <li class="dropdown-item"> <i class="flag-icon flag-icon-cn mr-2"></i> Chinese</li>-->
+<!--          <li class="dropdown-item"> <i class="flag-icon flag-icon-de mr-2"></i> German</li>-->
+<!--        </ul>-->
+<!--    </li>-->
+<!--    <li class="nav-item">-->
+<!--      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">-->
+<!--        <span class="user-profile"><img src="https://via.placeholder.com/110x110" class="img-circle" alt="user avatar"></span>-->
+<!--      </a>-->
+<!--      <ul class="dropdown-menu dropdown-menu-right">-->
+<!--       <li class="dropdown-item user-details">-->
+<!--        <a href="javaScript:void();">-->
+<!--           <div class="media">-->
+<!--             <div class="avatar"><img class="align-self-start mr-3" src="https://via.placeholder.com/110x110" alt="user avatar"></div>-->
+<!--            <div class="media-body">-->
+<!--&lt;!&ndash;            <h6 class="mt-2 user-title">Sarajhon Mccoy</h6>&ndash;&gt;-->
+<!--&lt;!&ndash;            <p class="user-subtitle">mccoy@example.com</p>&ndash;&gt;-->
+<!--            </div>-->
+<!--           </div>-->
+<!--          </a>-->
+<!--        </li>-->
+<!--        <li class="dropdown-divider"></li>-->
+<!--        <li class="dropdown-item"><i class="icon-envelope mr-2"></i> Inbox</li>-->
+<!--        <li class="dropdown-divider"></li>-->
+<!--        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li>-->
+<!--        <li class="dropdown-divider"></li>-->
+<!--        <li class="dropdown-item"><i class="icon-settings mr-2"></i> Setting</li>-->
+<!--        <li class="dropdown-divider"></li>-->
+<!--        <li class="dropdown-item"><i class="icon-power mr-2"></i> Logout</li>-->
+          <a href="logout" class="button">LOGOUT</a>
+      </ul>
+    </li>
+</nav>
+</header>
+<!--End topbar header-->
+
+<div class="clearfix"></div>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Manage Providers</h5>
+			  <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th class="name">Name</th>
+					<th class="email">Email</th>
+                    <th class="username">Username</th>
+					<th class="gender">Gender</th>
+					<th class="phone_no">Phone</th>
+					<th class="location">Location</th>
+					<th class="photo">Photo</th>
+                    <th class="license">License</th>
+
+                    <th>action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for i in r %}
+                      <tr class="table-body-row">
+                            <td>{{i.name}}</td>
+									<td>{{i.email}}</td>
+                                    <td>{{i.username}}</td>
+									<td>{{i.gender}}</td>
+									<td>{{i.phone_no}}</td>
+									<td>{{i.location}}</td>
+									<td><img src="{{i.photo.url}}"  height="60"></td>
+                                    <td><img src="{{i.license.url}}" height="60"></td>
+						  			<td>{{i.action}}
+                                        <form action="accepting" method="POST">
+                                            {% csrf_token %}
+                                            <input type="text" name="n1" value="{{i.id}}" hidden>
+                                            <td><input type="submit" value="Accept" onclick="return confirm('Are you sure')"></td>
+                                        </form>
+                                        <form action="deleting" method="POST">
+                                            {% csrf_token %}
+                                            <input type="text" name="n1" value="{{i.id}}" hidden>
+                                            <td><input type="submit" value="Reject" onclick="return confirm('Are you sure')"></td>
+                                        </form>
+                                </tr>
+
+                  {% endfor %}
+
+<!--                    <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--                        <ul class="navbar-nav mx-auto">-->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="index.html">Home</a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="about.html">Story</a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link active" href="products.html">Products</a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="faq.html">FAQs</a>-->
+<!--                            </li>-->
+
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="contact.html">Contact</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+
+<!--                        <div class="d-none d-lg-block">-->
+<!--                            <a href="sign-in.html" class="bi-person custom-icon me-3"></a>-->
+
+<!--                            <a href="product-detail.html" class="bi-bag custom-icon"></a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </nav>-->
+<!--                        <table class="table table-striped">-->
+
+<!--                            <thead>-->
+<!--                                <tr>-->
+<!--                                    <th>First Name</th>-->
+<!--                                    <th>SurName</th>-->
+<!--                                    <th>Phone Number</th>-->
+<!--                                    <th>Email</th>-->
+<!--                                    <th>Username</th>-->
+<!--                                    <th>Action</th>-->
+<!--&lt;!&ndash;                                    <th>Image</th>&ndash;&gt;-->
+<!--                                </tr>-->
+<!--                            </thead>-->
+<!--                            <tbody>-->
+<!--                            {% for i in r %}-->
+<!--                                <tr>-->
+<!--                                    <th scope="row">{{i.f_name}}</th>-->
+<!--                                    <th scope="row">{{i.s_name}}</th>-->
+<!--                                    <td>{{i.phone_number}}</td>-->
+<!--                                    <td>{{i.email}}</td>-->
+<!--                                    <td>{{i.username}}</td>-->
+<!--                                    <td>{{i.action}}</td>-->
+<!--&lt;!&ndash;                                    <td>{{i.image}}</td>&ndash;&gt;-->
+<!--                                        <form action="acceptingauthor" method="POST">-->
+<!--                                            {% csrf_token %}-->
+<!--                                            <input type="text" name="n1" value="{{i.id}}" hidden>-->
+<!--                                            <td><input type="submit" value="Accept" onclick="return confirm('Are you sure')"></td>-->
+<!--                                        </form>-->
+<!--                                        <form action="deletingauthor" method="POST">-->
+<!--                                            {% csrf_token %}-->
+<!--                                            <input type="text" name="n1" value="{{i.id}}" hidden>-->
+<!--                                            <td><input type="submit" value="Reject" onclick="return confirm('Are you sure')"></td>-->
+<!--                                        </form>-->
+<!--                                </tr>-->
+<!--                            {% endfor %}-->
+<!--                            </tbody>-->
+<!--                        </table>-->
+<!--&lt;!&ndash;                        <a href="h">BACK</a>&ndash;&gt;-->
+<!--                </div>-->
+<!--            </divclass>-->
+
+<!--                  <tr>-->
+<!--                    <th scope="row">2</th>-->
+<!--                    <td>Jacob</td>-->
+<!--                    <td>Thornton</td>-->
+<!--                    <td>@fat</td>-->
+<!--                  </tr>-->
+<!--                  <tr>-->
+<!--                    <th scope="row">3</th>-->
+<!--                    <td colspan="2">Larry the Bird</td>-->
+<!--                    <td>@twitter</td>-->
+<!--                  </tr>-->
+                </tbody>
+              </table>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!--End Row-->
+
+	  <!--start overlay-->
+		  <div class="overlay toggle-menu"></div>
+		<!--end overlay-->
+
+    </div>
+    <!-- End container-fluid-->
+
+    </div><!--End content-wrapper-->
+   <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+
+	<!--start color switcher-->
+   <div class="right-sidebar">
+    <div class="switcher-icon">
+      <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
+    </div>
+    <div class="right-sidebar-content">
+
+      <p class="mb-0">Gaussion Texture</p>
+      <hr>
+
+      <ul class="switcher">
+        <li id="theme1"></li>
+        <li id="theme2"></li>
+        <li id="theme3"></li>
+        <li id="theme4"></li>
+        <li id="theme5"></li>
+        <li id="theme6"></li>
+      </ul>
+
+      <p class="mb-0">Gradient Background</p>
+      <hr>
+
+      <ul class="switcher">
+        <li id="theme7"></li>
+        <li id="theme8"></li>
+        <li id="theme9"></li>
+        <li id="theme10"></li>
+        <li id="theme11"></li>
+        <li id="theme12"></li>
+		<li id="theme13"></li>
+        <li id="theme14"></li>
+        <li id="theme15"></li>
+      </ul>
+
+     </div>
+   </div>
+  <!--end color switcher-->
+
+  </div><!--End wrapper-->
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="{% static 'assets1/js/jquery.min.js' %}"></script>
+  <script src="{% static 'assets1/js/popper.min.js' %}"></script>
+  <script src="{% static 'assets1/js/bootstrap.min.js' %}"></script>
+
+  <!-- simplebar js -->
+  <script src="{% static 'assets1/plugins/simplebar/js/simplebar.js' %}"></script>
+  <!-- sidebar-menu js -->
+  <script src="{% static 'assets1/js/sidebar-menu.js' %}"></script>
+
+  <!-- Custom scripts -->
+  <script src="{% static 'assets1/js/app-script.js' %}"></script>
+
+</body>
+</html>
+
+
+
